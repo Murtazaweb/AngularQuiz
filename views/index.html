@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html ng-app="myquiz" >
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Test Your General Knowledge Here </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+    <link rel="stylesheet" href="stylesheets/quiz.css">
+    <script type="text/javascript" src="javascripts/quiz.js"> </script>
+
+
+</head>
+<body>
+<div id="myquiz" ng-controller="quizCTRL">
+    <h1>Test  Here<span>  Knowledge</span></h1>
+    <div class="progress">
+        <div class= "{{($index === activeq) ? 'on' : 'off'}}
+        {{myq.questionstate === 'answered' ? 'answered' : 'unanswered'}}
+        {{myq.correctness === 'correct' ? 'correct' : 'incorrect'}}
+
+        "
+
+             ng-repeat="myq in myquestion"></div>
+
+    </div>
+    <div class="intro {{(activeq > -1) ? 'inactive' : 'active'}}">
+        <h2>Welcome</h2>
+        <p>Begin Here to Start Your Test</p>
+        <p class="btn" ng-click="activeq=0">Start</p>
+
+
+
+    </div>
+    <div class="question  {{$index ===activeq ? 'active' : 'inactive'}}
+     {{myq.questionstate === 'answered' ? 'answered' : 'unanswered'}}" ng-repeat="myq in myquestion">
+        <p class="txt">{{myq.question}}</p>
+        <p class="ans" ng-class="{selected:isSelected($parent.$index,$index),
+         correct:isCorrect($parent.$index,$index)}"
+           ng-click="selectans($parent.$index,$index)"
+           ng-repeat="Answer in myquestion[$index].answers">{{Answer.text}} </p>
+
+        <div class="feedback">
+            <p ng-show="myq.correctness === 'correct'"> Thats <strong> Correct </strong></p>
+            <p ng-show="myq.correctness === 'incorrect'"> Thats <strong> Wrong Son</strong></p>
+            <p> {{myq.feedback}} </p>
+            <div class="btn" ng-click="selectContinue()">Continue </div>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="results {{(totalquestions === activeq) ? 'active' : 'inactive'}}">
+        <h3> Results</h3>
+        <p> You Scored {{perc}}% by Correctly  aswering {{score}} of the Total {{totalquestions}} questions.</p>
+        <p>Use the link below to Chnalenge Your Firned </p>
+        <div class="share">Share links go there
+            <a class="btn email" href="#">Email</a>
+            <a class="btn twitter" href="#">Tweet</a>
+
+        </div>
+
+
+    </div>
+
+
+
+
+</div>
+</body>
+</html>

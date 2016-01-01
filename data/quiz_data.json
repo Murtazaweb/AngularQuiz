@@ -1,0 +1,88 @@
+[
+    {
+        "question" : "The United Nations was founded on ",
+        "answers"  : [
+            {"id"  : 0, "text" : "March 24, 1945"},
+            {"id"  : 1, "text" : "October 24, 1945"},
+            {"id"  : 2, "text" : "March 24, 1949"},
+            {"id"  : 3, "text" : "October 24, 1950"}
+        ],
+        "correct"  : 1
+    },
+
+
+
+
+
+    {
+		"question" : "Which country from the following is NOT the member of UNO?",
+		"answers"  : [
+			{"id"  : 0, "text" : "Vatician City" },
+			{"id"  : 1, "text" : "Afghanistan" },
+			{"id"  : 2, "text" : "North Korea" },
+			{"id"  : 3, "text" : "Vietnam" }
+		],
+		"correct"  : 0
+	},
+
+	{
+		"question" : "The International Court of Justice is located in?",
+		"answers"  : [
+			{"id"  : 0, "text" : "NewYork"},
+			{"id"  : 1, "text" : "Washington"},
+			{"id"  : 2, "text" : "Genieva"},
+			{"id"  : 3, "text" : "The Hague"}
+
+		],
+		"correct"  : 3,
+		"feedback" : "Though the names seem similar, Triton orbits the planet Neptune."
+	},
+	{
+		"question" : " Totalmembers of SAARC.",
+		"answers"  : [
+			{"id"  : 0, "text" : "5"},
+			{"id"  : 1, "text" : "6"},
+            {"id"  : 2, "text" : "7"},
+            {"id"  : 3, "text" : "8"}
+		],
+		"correct"  : 3
+	},
+    {
+        "question": "non-permanent members of the security council  are",
+        "answers"  : [
+            {"id"  : 0, "text" : "5"},
+            {"id"  : 1, "text" : "7"},
+            {"id"  : 2, "text" : "10"},
+            {"id"  : 3, "text" : "15"}
+        ],
+        "correct": 2
+
+
+    },
+    {
+        "question": "Currency Of Indonesia Is ",
+        "answers":[
+            {"id":0, "text" : "Rupiah"},
+            {"id":1, "text" : "Dinar"},
+            {"id":2, "text" : "Rangit"},
+            {"id":3, "text" : "Riyal"}
+
+        ],
+        "correct": 0
+
+
+    },
+    {
+        "question": "The headquarter of NATO is located in",
+        "answers":[
+            {"id":0, "text" : "NewYork"},
+            {"id":1, "text" : "Paris"},
+            {"id":2, "text" : "Gineava"},
+            {"id":3, "text" : "Brussels"}
+
+        ],
+        "correct": 3
+
+
+    }
+    ]
