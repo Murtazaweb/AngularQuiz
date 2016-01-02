@@ -21,7 +21,7 @@ body { background-color: #fff; padding: 20px; }
 #myquiz  p{margin: 0px 0px 14px 0px}
 #myquiz  .btn{display: inline-block; cursor: pointer; background-color: #c04b01;
     padding:  5px 15px; border-radius: 6px}
-#myquiz  .progress { width: 550px; position: absolute; top: 160px; left: 40px; margin-top: 50px}
+#myquiz  .progress { width: 550px; position: absolute; top: 160px; left: 40px; margin-top: 30px}
 #myquiz  .progress  div {position: relative; display: inline-block; width: 30px; height:  30px; margin-right: 30px;
     border-radius: 50%;background-color: rgba(255,255,255,.2); transition: background-color 1s;
 }
