@@ -84,5 +84,33 @@
         "correct": 3
 
 
+    }, 
+    {
+        "question": "Decibel is the unit for",
+        "answers":[
+            {"id":0, "text" : "speed of light"},
+            {"id":1, "text" : "radio wave frequency"},
+            {"id":2, "text" : "intensity of sound"},
+            {"id":3, "text" : "intensity of heat"}
+
+        ],
+        "correct": 2
+
+
+
+    },
+    {
+        "question": "One horse power is equal to",
+        "answers":[
+            {"id":0, "text" : "746 watts"},
+            {"id":1, "text" : "748 watts"},
+            {"id":2, "text" : "756 watts"},
+            {"id":3, "text" : "750 watts"}
+
+        ],
+        "correct": 0
+
+
+
     }
     ]
