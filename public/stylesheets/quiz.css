@@ -87,3 +87,30 @@ background: norepeat 0px 0px; background-size: 20px 20px;
 
 #myquiz {height : 1000px}
 #myquiz  .results {top: 650px !important; left: 40px !important;}
+
+@media screen and (max-width:650px){
+    body { padding: 0px; margin: 0px;}
+    #myquiz {width: 320px; background-size: 320px auto;}
+    #myquiz h1 { width: 300px; font-size: 1.3em; top: 25px; left: 25px;}
+    #myquiz h1 span {line-height: 43px;}
+    #myquiz h2 {margin: 0px;}
+    #myquiz h3 {font-size: 2.2em; margin-bottom: 15px;}
+
+    #myquiz .progress { width: 300px; top: 110px; left: 25px; }
+    #myquiz .progress div {width: 25px; height: 25px; margin-right: 20px;}
+    #myquiz .progress div::after {top: -30px; width: 53px; height: 33px;}
+
+    #myquiz .intro {width: 300px; top: 135px; left: 330px}
+
+    #myquiz .question {width: 300px; top: 135px; left: 330px}
+    #myquiz .question .txt {font-size: 1.4em;margin-bottom: 15px;}
+    #myquiz .question .ans { font-size: 1em; padding: 5px 10px; margin-bottom: 10px}
+
+    #myquiz .results { width: 260px; top: 150px; left: 330px;}
+    #myquiz .results .share {margin-top: 20px;}
+    #myquiz .results a.btn {margin-bottom: 20px;}
+
+
+
+
+}
